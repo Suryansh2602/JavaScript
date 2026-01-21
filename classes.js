@@ -9,8 +9,14 @@ class Employee {
         this.#department = department;
         this.#salary = salary;
     }
-    displayInfo(){
-        console.log()
+    displayInfo() {
+        console.log(this.#department,
+            this.#id, this.#name
+        )
     }
 
+
 }
+emp = new Employee(1, "Suryansh", "IT", 50000);
+
+emp.displayInfo();
